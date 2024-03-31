@@ -1,4 +1,6 @@
 const homePage = () => {
+    const homePageContainer = document.createElement('div');
+    homePageContainer.setAttribute('id', 'home-page-container');
 
     const foodImage = document.createElement('img');
     foodImage.setAttribute('src', './images/pasta.png');
@@ -17,8 +19,10 @@ const homePage = () => {
     rightHalf.appendChild(welcome);
     rightHalf.appendChild(description);
 
-    document.body.appendChild(foodImage);
-    document.body.appendChild(rightHalf);
+    homePageContainer.appendChild(foodImage);
+    homePageContainer.appendChild(rightHalf);
+
+    document.querySelector('#content').appendChild(homePageContainer);
 };
 
 export default homePage;
