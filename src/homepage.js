@@ -2,9 +2,11 @@ const homePage = () => {
 
     const foodImage = document.createElement('img');
     foodImage.setAttribute('src', './images/pasta.png');
+    foodImage.setAttribute('id', 'home-image');
 
     const rightHalf = document.createElement('div');
     rightHalf.setAttribute('class', 'right-half');
+    rightHalf.setAttribute('id', 'home-right-half');
 
     const welcome = document.createElement('h2');
     welcome.innerHTML = "Welcome to Odin Restaurant.";
