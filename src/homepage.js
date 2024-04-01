@@ -1,6 +1,6 @@
 const homePage = () => {
     const homePageContainer = document.createElement('div');
-    homePageContainer.setAttribute('id', 'home-page-container');
+    homePageContainer.setAttribute('class', 'split-page-container');
 
     const foodImage = document.createElement('img');
     foodImage.setAttribute('src', './images/pasta.png');

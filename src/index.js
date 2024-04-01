@@ -5,9 +5,9 @@ import './style.css';
 
 const content = document.querySelector('#content');
 
-const homeButton = document.querySelector(".home");
-const menuButton = document.querySelector('.menu');
-const aboutButton = document.querySelector('.about');
+const homeButton = document.querySelector(".home-button");
+const menuButton = document.querySelector('.menu-button');
+const aboutButton = document.querySelector('.about-button');
 
 homeButton.onclick = () => {
     content.innerHTML = "";
