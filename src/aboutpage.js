@@ -1,9 +1,11 @@
+import founder from './images/founder.jpg';
+
 const aboutPage = () => {
     const aboutPageContainer = document.createElement('div');
     aboutPageContainer.setAttribute('class', 'split-page-container');
 
     const founderImage = document.createElement('img');
-    founderImage.setAttribute('src', './images/founder.png');
+    founderImage.setAttribute('src', founder);
     founderImage.setAttribute('id', 'about-image');
 
     const rightHalf = document.createElement('div');

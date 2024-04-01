@@ -1,9 +1,11 @@
+import pasta from './images/pasta.jpg';
+
 const homePage = () => {
     const homePageContainer = document.createElement('div');
     homePageContainer.setAttribute('class', 'split-page-container');
 
     const foodImage = document.createElement('img');
-    foodImage.setAttribute('src', './images/pasta.png');
+    foodImage.setAttribute('src', pasta);
     foodImage.setAttribute('id', 'home-image');
 
     const rightHalf = document.createElement('div');
