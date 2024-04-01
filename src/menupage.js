@@ -1,18 +1,28 @@
 const menuPage = () => {
     const menuContent = document.createElement('div');
+    menuContent.setAttribute('class', 'menu-content');
 
     //making the menu sections
     const starterSection = document.createElement('div');
+    starterSection.setAttribute('class', 'menu-section');
+    starterSection.setAttribute('id', 'starter-section');
     const pastaSection = document.createElement('div');
+    pastaSection.setAttribute('class', 'menu-section');
+    pastaSection.setAttribute('id', 'pasta-section');
     const dessertSection = document.createElement('div');
+    dessertSection.setAttribute('class', 'menu-section');
+    dessertSection.setAttribute('id', 'dessert-section');
 
     //making the headers
     const starterHeader = document.createElement('h1');
-    starterHeader.innerHTML = "Starters"
+    starterHeader.innerHTML = "Starters";
+    starterHeader.setAttribute('class', 'menu-header');
     const pastaHeader = document.createElement('h1');
-    pastaHeader.innerHTML = "Pasta"
+    pastaHeader.innerHTML = "Pasta";
+    pastaHeader.setAttribute('class', 'menu-header');
     const dessertHeader = document.createElement('h1');
-    dessertHeader.innerHTML = "Dessert"
+    dessertHeader.innerHTML = "Dessert";
+    dessertHeader.setAttribute('class', 'menu-header');
 
     //STARTERS-----------------------------
 
@@ -29,8 +39,8 @@ const menuPage = () => {
     pomodoroPrice.setAttribute('class', 'price');
     pomodoroPrice.innerHTML = '$10.95';
     pomodoro.appendChild(pomodoroName);
-    pomodoro.appendChild(pomodoroDescription);
     pomodoro.appendChild(pomodoroPrice);
+    pomodoro.appendChild(pomodoroDescription);
 
     //create caprese
     const caprese = document.createElement('div');
@@ -45,8 +55,8 @@ const menuPage = () => {
     capreseDescription.setAttribute('class', 'price');
     capresePrice.innerHTML = '$17.95';
     caprese.appendChild(capreseName);
-    caprese.appendChild(capreseDescription);
     caprese.appendChild(capresePrice);
+    caprese.appendChild(capreseDescription);
 
     //add to section
     starterSection.appendChild(starterHeader);
@@ -68,8 +78,8 @@ const menuPage = () => {
     spaghettiPrice.setAttribute('class', 'price');
     spaghettiPrice.innerHTML = '$18.95';
     spaghetti.appendChild(spaghettiName);
-    spaghetti.appendChild(spaghettiDescription);
     spaghetti.appendChild(spaghettiPrice);
+    spaghetti.appendChild(spaghettiDescription);
 
     //create campagnola
     const campagnola = document.createElement('div');
@@ -84,8 +94,8 @@ const menuPage = () => {
     campagnolaPrice.setAttribute('class', 'price');
     campagnolaPrice.innerHTML = '$19.95';
     campagnola.appendChild(campagnolaName);
-    campagnola.appendChild(campagnolaDescription);
     campagnola.appendChild(campagnolaPrice);
+    campagnola.appendChild(campagnolaDescription);
 
     //create fettuccine
     const fettuccine = document.createElement('div');
@@ -100,8 +110,8 @@ const menuPage = () => {
     fettuccinePrice.setAttribute('class', 'price');
     fettuccinePrice.innerHTML = '$18.95';
     fettuccine.appendChild(fettuccineName);
-    fettuccine.appendChild(fettuccineDescription);
     fettuccine.appendChild(fettuccinePrice);
+    fettuccine.appendChild(fettuccineDescription);
 
     //create ravioli
     const ravioli = document.createElement('div');
@@ -116,8 +126,8 @@ const menuPage = () => {
     ravioliPrice.setAttribute('class', 'price');
     ravioliPrice.innerHTML = '$19.95';
     ravioli.appendChild(ravioliName);
-    ravioli.appendChild(ravioliDescription);
     ravioli.appendChild(ravioliPrice);
+    ravioli.appendChild(ravioliDescription);
 
     starterSection.appendChild(pastaHeader);
     starterSection.appendChild(spaghetti);
@@ -140,8 +150,8 @@ const menuPage = () => {
     pannaCottaPrice.setAttribute('class', 'price');
     pannaCottaPrice.innerHTML = '$8.95';
     pannaCotta.appendChild(pannaCottaName);
-    pannaCotta.appendChild(pannaCottaDescription);
     pannaCotta.appendChild(pannaCottaPrice);
+    pannaCotta.appendChild(pannaCottaDescription);
 
     //create panna cotta
     const tiramisu = document.createElement('div');
@@ -156,8 +166,8 @@ const menuPage = () => {
     tiramisuPrice.setAttribute('class', 'price');
     tiramisuPrice.innerHTML = '$9.95';
     tiramisu.appendChild(tiramisuName);
-    tiramisu.appendChild(tiramisuDescription);
     tiramisu.appendChild(tiramisuPrice);
+    tiramisu.appendChild(tiramisuDescription);
 
     starterSection.appendChild(dessertHeader);
     starterSection.appendChild(pannaCotta);
