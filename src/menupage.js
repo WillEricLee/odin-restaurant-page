@@ -8,8 +8,11 @@ const menuPage = () => {
 
     //making the headers
     const starterHeader = document.createElement('h1');
+    starterHeader.innerHTML = "Starters"
     const pastaHeader = document.createElement('h1');
+    pastaHeader.innerHTML = "Pasta"
     const dessertHeader = document.createElement('h1');
+    dessertHeader.innerHTML = "Dessert"
 
     //STARTERS-----------------------------
 
@@ -46,6 +49,7 @@ const menuPage = () => {
     caprese.appendChild(capresePrice);
 
     //add to section
+    starterSection.appendChild(starterHeader);
     starterSection.appendChild(pomodoro);
     starterSection.appendChild(caprese);
 
@@ -115,6 +119,7 @@ const menuPage = () => {
     ravioli.appendChild(ravioliDescription);
     ravioli.appendChild(ravioliPrice);
 
+    starterSection.appendChild(pastaHeader);
     starterSection.appendChild(spaghetti);
     starterSection.appendChild(campagnola);
     starterSection.appendChild(fettuccine);
@@ -154,6 +159,7 @@ const menuPage = () => {
     tiramisu.appendChild(tiramisuDescription);
     tiramisu.appendChild(tiramisuPrice);
 
+    starterSection.appendChild(dessertHeader);
     starterSection.appendChild(pannaCotta);
     starterSection.appendChild(tiramisu);
 
